@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+    <head>
+
+        <!-- View port meta tag allows you to tell the browser how it should deal 
+            with the view port and this parameter tells not to use a virtual viewport 
+            that is the size of the device is the size of the vipewport and there is 
+            no zoom going on when the page is being loaded --> 
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Prioritize CSS to fit mobile devices first because going small to big
+        is easier than big to small, and mobile devices make up more of web traffic -->
+
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+
+            /* Change based on media device */
+
+            /* @media screen and (min-width: 600px) {
+                
+            body {
+                background-color: blue;
+            }
+            } */
+
+            /* CONTENT ------------------------------------------- */
+
+            #wrapper {
+                /* width: 900px; */
+                /* height: 600px; */
+                display: flex;
+                flex-direction: row;
+                border: 2px solid black;
+                justify-content: space-around;     /* ALONG FLEX DIRECTION */
+                align-items: center;               /* ACROSS FLEX DIRECTION */
+                background-color: lightblue;
+    
+            }
+
+            #page {
+                display: flex;
+                flex-direction: column;
+            }
+
+            @media screen and (min-width: 600px) {
+                #wrapper {
+                    flex-direction: column;
+                    width: 25vw;
+                }
+            }
+
+                #page {
+                    display: flex;
+                    flex-direction: row;
+                }
+
+            .box {
+                width: 100px;
+                height: 100px;
+                border: 1px solid black;
+                margin: 10px;
+            }
+
+            #box1 {
+                background-color: red;
+            }
+
+            #box2 {
+                background-color: yellow;
+            }
+
+            #box3 {
+                background-color: green;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <div id="page">
+        <div id="wrapper">
+            <div class="box" id="box1"> </div>
+            <div class="box" id="box2"> </div>
+            <div class="box" id="box3"> </div>
+        </div>
+        <main>
+            <h1> FORTNITE </h1>
+        </main>
+        </div>
+
+
+    </body>
+
+</html>
